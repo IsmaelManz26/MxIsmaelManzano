@@ -1,0 +1,377 @@
+@font-face {
+  font-family: "Nouvel";
+  src: url(../fonts/NouvelR.ttf), url(../fonts/NouvelR.woff),
+    url(../fonts/NouvelR.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Nouvel, sans-serif;
+}
+:root {
+  --naranja: #e74c3c;
+  --grisoscuro: #333333;
+}
+.header-nav {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 1rem 2rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-nav {
+  flex: 1;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  background-image: url("../Fotos/Logo/letras2.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+/*CTAS*/
+.div-ctas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 9rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 7rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.burger-menu {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.burger-menu img {
+  width: 40px;
+  height: auto;
+}
+
+/* Sección hero */
+.hero-contact {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  padding-top: 4%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../Fotos/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* CONTACT US */
+.section-contact {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 4rem;
+  box-sizing: border-box;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  overflow: hidden;
+}
+
+.contact-title {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+
+.contact-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-subscribe,
+.contact-form {
+  flex: 1 1 50%;
+  padding: 2rem;
+  color: white;
+  box-sizing: border-box;
+}
+
+.contact-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  justify-content: flex-start;
+  padding: 4rem;
+}
+
+.contact-subscribe h2 {
+  font-family: Nouvel, sans-serif;
+  font-weight: bold;
+  font-size: clamp(1.4rem, 1.3rem + 0.333vw, 1.7rem);
+  margin-bottom: 4rem;
+}
+
+.subscribe-box {
+  background-color: black;
+  padding: 4rem 0 0 4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.subscribe-box h3 {
+  font-family: Nouvel, sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 1.3rem + 0.333vw, 1.7rem);
+  margin-bottom: 2rem;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1 1 70%;
+  padding: 1rem;
+  font-size: clamp(1.2rem, 1.133rem + 0.222vw, 1.4rem);
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  margin-right: 1rem;
+  box-sizing: border-box; /* Asegurar que el padding no cause desbordamiento */
+}
+
+.subscribe-form button {
+  flex: 1 1 30%;
+  padding: 1rem;
+  font-size: clamp(1.2rem, 1.133rem + 0.222vw, 1.4rem);
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-family: Nouvel, sans-serif;
+  font-weight: 550; /* Semibold */
+  font-size: clamp(1.3rem, 1.233rem + 0.222vw, 1.5rem);
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 1rem;
+  font-size: clamp(1.1rem, 1.033rem + 0.222vw, 1.3rem);
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 10vh;
+}
+
+.contact-form button {
+  align-self: flex-end;
+  padding: 1rem 2rem;
+  font-size: clamp(1.1rem, 1.033rem + 0.222vw, 1.3rem);
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* FOOTER */
+.footer {
+  height: 100%;
+  width: 100%;
+  padding: 4rem 7.5rem 1rem 7.5rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+.footer-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-element {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-mx {
+  flex: 1 1 30%;
+}
+
+.footer-mx h1 {
+  font-family: Nouvel, sans-serif;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 1.333rem + 0.556vw, 2rem);
+}
+
+.footer-links {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.footer-links h2 {
+  font-size: clamp(1.5rem, 1.4rem + 0.333vw, 1.8rem);
+  padding-top: 1rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.footer-nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: clamp(1.2rem, 1.133rem + 0.222vw, 1.4rem);
+  font-weight: bold;
+}
+
+/* COPYRIGHT */
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(1.2rem, 1.133rem + 0.222vw, 1.4rem);
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  width: 100px;
+  height: 100%;
+  margin-right: 1rem;
+}
+
+.footer-cookies {
+  display: flex;
+}
+.footer-links-cookies {
+  list-style: none;
+  display: flex;
+  gap: 1vw;
+}
+.footer-copyright a {
+  color: white;
+  text-decoration: none;
+  font-size: clamp(1.2rem, 1.133rem + 0.222vw, 1.4rem);
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+/* --------------MEDIA QUERY ------------------- */
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1200px) {
+  .div-ctas {
+    padding-right: 5rem;
+  }
+  .nav-links {
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .div-ctas {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+
+  /* footer */
+  .footer {
+    padding: 4rem 3rem 1rem 3rem;
+  }
+  .footer-logo {
+    width: 50px;
+  }
+  .footer-links-cookies a:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+}
