@@ -573,4 +573,7 @@ body {
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
+  .hero-image {
+    padding-top: 70%;
+  }
 }
